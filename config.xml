@@ -2,7 +2,7 @@
 <widget 
 xmlns = "http://www.w3.org/ns/widgets"
 xmlns:gap = "http://phonegap.com/ns/1.0"
-id = "net.palmdoc.vteios"
+id = "net.palmdoc.vte"
 version = "1.4.12">
 
 <name>VTE</name>
