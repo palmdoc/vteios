@@ -1,0 +1,189 @@
+﻿<!DOCTYPE HTML>
+<html manifest="OfflineApp.appcache">
+<head>
+<meta charset="utf-8">
+<title>VTE</title>
+<meta name="generator" content="NSB/AppStudio 4.1.5.1$gxbr" />
+<meta name='date' content='2014-09-14 08:41:48.661000' />
+<meta name='version' content='1.4.12' />
+<meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no, minimal-ui' />
+<meta name='apple-mobile-web-app-capable' content='YES' />
+<meta name='mobile-web-app-capable' content='yes' />
+<meta name='apple-mobile-web-app-status-bar-style' content='black-translucent' />
+<meta name='apple-mobile-web-app-title' content='' />
+<meta name='copyright' content='Copyright 2014 ABC Company' />
+<noscript><h1>JavaScript must be enabled!</h1></noscript>
+<link rel='apple-touch-icon' href='icon.png' />
+<!-- Startup images -->
+<!-- iOS 6 & 7 iPad (retina, portrait) -->
+<link href='splash/ios/1536x2008.png'
+      media='(device-width: 768px) and (device-height: 1024px)
+         and (orientation: portrait)
+         and (-webkit-device-pixel-ratio: 2)'
+      rel='apple-touch-startup-image'>
+<!-- iOS 6 & 7 iPad (retina, landscape) -->
+<link href='splash/ios/1496x2048.png'
+      media='(device-width: 768px) and (device-height: 1024px)
+         and (orientation: landscape)
+         and (-webkit-device-pixel-ratio: 2)'
+      rel='apple-touch-startup-image'>
+<!-- iOS 6 iPad (portrait) -->
+<link href='splash/ios/768x1004.png'
+      media='(device-width: 768px) and (device-height: 1024px)
+         and (orientation: portrait)
+         and (-webkit-device-pixel-ratio: 1)'
+      rel='apple-touch-startup-image'>
+<!-- iOS 6 iPad (landscape) -->
+<link href='splash/ios/748x1024.png'
+      media='(device-width: 768px) and (device-height: 1024px)
+         and (orientation: landscape)
+         and (-webkit-device-pixel-ratio: 1)'
+      rel='apple-touch-startup-image'>
+<!-- iOS 6 & 7 iPhone 5 -->
+<link href='splash/ios/640x1096.png'
+      media='(device-width: 320px) and (device-height: 568px)
+         and (-webkit-device-pixel-ratio: 2)'
+      rel='apple-touch-startup-image'>
+<!-- iOS 6 & 7 iPhone (retina) -->
+<link href='splash/ios/640x920.png'
+      media='(device-width: 320px) and (device-height: 480px)
+         and (-webkit-device-pixel-ratio: 2)'
+      rel='apple-touch-startup-image'>
+<!-- iOS 6 iPhone -->
+<link href='splash/ios/320x460.png'
+      media='(device-width: 320px) and (device-height: 480px)
+         and (-webkit-device-pixel-ratio: 1)'
+      rel='apple-touch-startup-image'>
+<link rel='shortcut icon' sizes='196x196' href='nsb/images/196.png' />
+<script src="nsb/jquery.js"></script>
+<script src="nsb/hfunc.js"></script>
+<link href="nsb/nsbstyle.css" rel="stylesheet">
+<script src="nsb/fastclick.js"></script>
+<script src="nsb/complexfunctions.js"></script>
+<script src="nsb/jquery.mobile.js"></script>
+<link href="nsb/jquery.mobile.css" rel="stylesheet">
+<script src="nsb/iscroll.js"></script>
+
+
+
+<style type="text/css">
+#hdrMain {position: absolute; width:100%; height:40px; left:0px; top:0px;}
+#HTMLviewMain_scroller {position: absolute; overflow:hidden; width:95%; height:100px; left:12px; top:15%;}
+#HTMLviewMain {position:absolute; left:0px; top:0px; height:100px; width:95%}
+#lstMain_scroller {position: absolute; overflow:hidden; width:100%; height:auto; left:0px; top:40%;}
+#lstMain {position:absolute; left:0px; top:0px; width:100%; height:auto }
+#lstMain {left:0px; top:40%;}
+#imgMain {position:absolute; left:45%; right:auto; top:85%; bottom:auto; height:44px; width:44px}
+#hdrFeedback {position: absolute; width:100%; height:40px; left:0px; top:0px;}
+#lstFeedback_scroller {position: absolute; overflow:hidden; width:100%; height:32px; left:0px; top:25%;}
+#lstFeedback {position:absolute; left:0px; top:0px; width:100%; height:auto }
+#lstFeedback {left:0px; top:25%;}
+#Label1 {position:absolute; left:3%; right:auto; top:12%; bottom:auto; height:auto; width:90%}
+#hdrView {position: absolute; width:100%; height:40px; left:0px; top:0px;}
+#HTMLview1_scroller {position: absolute; overflow:hidden; width:97%; height:90%; left:3%; top:46px;}
+#HTMLview1 {position:absolute; left:0px; top:0px; height:90%; width:97%}
+#HdrCP {position: absolute; width:100%; height:40px; left:0px; top:0px;}
+#lstCP_scroller {position: absolute; overflow:hidden; width:100%; height:90%; left:0px; top:10%;}
+#lstCP {position:absolute; left:0px; top:0px; width:100%; height:auto }
+
+#HdrMX {position: absolute; width:100%; height:40px; left:0px; top:0px;}
+#lstMX_scroller {position: absolute; overflow:hidden; width:100%; height:100%; left:0px; top:12%;}
+#lstMX {position:absolute; left:0px; top:0px; width:100%; height:auto }
+
+#HdrClinTools {position: absolute; width:100%; height:40px; left:0px; top:0px;}
+#lstClinTools_scroller {position: absolute; overflow:hidden; width:100%; height:auto; left:0px; top:12%;}
+#lstClinTools {position:absolute; left:0px; top:0px; width:100%; height:auto }
+#lstClinTools {left:0px; top:12%;}
+#HdrAnticoag {position: absolute; width:100%; height:40px; left:0px; top:0px;}
+#lstAnticoag_scroller {position: absolute; overflow:hidden; width:100%; height:32px; left:0px; top:57px;}
+#lstAnticoag {position:absolute; left:0px; top:0px; width:100%; height:auto }
+#lstAnticoag {left:0px; top:57px;}
+#hdrImprove {position: absolute; width:100%; height:40px; left:0px; top:0px;}
+#chkImprove {position:absolute; left:0px; right:auto; top:8%; bottom:auto; height:100%; width:100%}
+#hdrPadua {position: absolute; width:100%; height:40px; left:0px; top:0px;}
+#chkPadua {position:absolute; left:0px; right:auto; top:8%; bottom:auto; height:100%; width:100%}
+#hdrWellsDVT {position: absolute; width:100%; height:40px; left:0px; top:0px;}
+#chkWellsDVT {position:absolute; left:0px; right:auto; top:8%; bottom:auto; height:100%; width:100%}
+#hdrWellsPE {position: absolute; width:100%; height:40px; left:0px; top:0px;}
+#chkWellsPE {position:absolute; left:0px; right:auto; top:8%; bottom:auto; height:100%; width:100%}
+#hdrViewWells {position: absolute; width:100%; height:40px; left:0px; top:0px;}
+#HTMLviewWells_scroller {position: absolute; overflow:hidden; width:97%; height:90%; left:3%; top:51px;}
+#HTMLviewWells {position:absolute; left:0px; top:0px; height:90%; width:97%}
+#hdrAlgorithm {position: absolute; width:100%; height:40px; left:0px; top:0px;}
+#imgAlgo {position:absolute; left:0px; right:auto; top:10%; bottom:auto; height:314px; width:320px}
+body * {font-family:helvetica}
+</style>
+</head>
+<body style="margin:0px;-ms-touch-action:none;">
+<script src="13.js"></script>
+<div data-role="page" id="Page_jqm" data-theme="a" style="">
+
+<form id="frmMain" action="" method="GET" onsubmit="return false;" style="display:none; height:100%; position:absolute; background:-webkit-gradient(linear, left top, left bottom, from(#EFFBF5), to(#A9E2F3));; top:20px; left:0px; width:100%; ">
+<script src="15.js"></script>
+</form>
+
+
+<form id="frmFeedback" action="" method="GET" onsubmit="return false;" style="display:none; height:100%; position:absolute; background:-webkit-gradient(linear, left top, left bottom, from(#EFFBF5), to(#A9E2F3));; top:20px; left:0px; width:100%; ">
+<script src="17.js"></script>
+</form>
+
+
+<form id="frmView" action="" method="GET" onsubmit="return false;" style="display:none; height:100%; position:absolute; background:-webkit-gradient(linear, left top, left bottom, from(#EFFBF5), to(#A9E2F3));; top:20px; left:0px; width:100%; ">
+<script src="19.js"></script>
+</form>
+
+
+<form id="frmCP" action="" method="GET" onsubmit="return false;" style="display:none; height:100%; position:absolute; background:-webkit-gradient(linear, left top, left bottom, from(#EFFBF5), to(#A9E2F3));; top:20px; left:0px; width:100%; ">
+<script src="21.js"></script>
+</form>
+
+
+<form id="frmMX" action="" method="GET" onsubmit="return false;" style="display:none; height:100%; position:absolute; background:-webkit-gradient(linear, left top, left bottom, from(#EFFBF5), to(#A9E2F3));; top:20px; left:0px; width:100%; ">
+<script src="23.js"></script>
+</form>
+
+
+<form id="frmClinTools" action="" method="GET" onsubmit="return false;" style="display:none; height:100%; position:absolute; background:-webkit-gradient(linear, left top, left bottom, from(#EFFBF5), to(#A9E2F3));; top:20px; left:0px; width:100%; ">
+<script src="25.js"></script>
+</form>
+
+
+<form id="frmAnticoag" action="" method="GET" onsubmit="return false;" style="display:none; height:100%; position:absolute; background:-webkit-gradient(linear, left top, left bottom, from(#EFFBF5), to(#A9E2F3));; top:20px; left:0px; width:100%; ">
+<script src="27.js"></script>
+</form>
+
+
+<form id="frmImprove" action="" method="GET" onsubmit="return false;" style="display:none; height:100%; position:absolute; background:-webkit-gradient(linear, left top, left bottom, from(#EFFBF5), to(#A9E2F3));; top:20px; left:0px; width:100%; ">
+<script src="29.js"></script>
+</form>
+
+
+<form id="frmPadua" action="" method="GET" onsubmit="return false;" style="display:none; height:100%; position:absolute; background:-webkit-gradient(linear, left top, left bottom, from(#EFFBF5), to(#A9E2F3));; top:20px; left:0px; width:100%; ">
+<script src="31.js"></script>
+</form>
+
+
+<form id="frmWellsDVT" action="" method="GET" onsubmit="return false;" style="display:none; height:100%; position:absolute; background:-webkit-gradient(linear, left top, left bottom, from(#EFFBF5), to(#A9E2F3));; top:20px; left:0px; width:100%; ">
+<script src="33.js"></script>
+</form>
+
+
+<form id="frmWellsPE" action="" method="GET" onsubmit="return false;" style="display:none; height:100%; position:absolute; background:-webkit-gradient(linear, left top, left bottom, from(#EFFBF5), to(#A9E2F3));; top:20px; left:0px; width:100%; ">
+<script src="35.js"></script>
+</form>
+
+
+<form id="frmViewWells" action="" method="GET" onsubmit="return false;" style="display:none; height:100%; position:absolute; background:-webkit-gradient(linear, left top, left bottom, from(#EFFBF5), to(#A9E2F3));; top:20px; left:0px; width:100%; ">
+<script src="37.js"></script>
+</form>
+
+
+<form id="frmPicture" action="" method="GET" onsubmit="return false;" style="display:none; height:100%; position:absolute; background:-webkit-gradient(linear, left top, left bottom, from(#EFFBF5), to(#A9E2F3));; top:20px; left:0px; width:100%; ">
+<script src="39.js"></script>
+</form>
+
+</div>
+<script src="41.js"></script>
+
+</body>
+</html>

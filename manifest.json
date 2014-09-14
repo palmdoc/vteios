@@ -1,0 +1,12 @@
+{ "manifest_version": 2,
+  "name": "VTE",
+  "version": "1.4.12",
+  "offline_enabled": true,
+  "description": "",
+  "display_in_launcher": true,
+  "display_in_new_tab_page": true,
+  "short_name": "VTE",
+  "icons": { "16": "nsb/images/16.png",
+            "128": "nsb/images/128.png" },
+  "author": "Copyright 2014 ABC Company",
+  "app": {"background": {"scripts": ["background.js"]}}}
