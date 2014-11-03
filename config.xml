@@ -3,12 +3,11 @@
 xmlns = "http://www.w3.org/ns/widgets"
 xmlns:gap = "http://phonegap.com/ns/1.0"
 id = "net.palmdoc.vte"
-version = "1.4.12">
+version = "1.4.14">
 
 <name>VTE</name>
 <description></description>
-<preference name="phonegap-version" value="3.5.0" />
-
+<preference name="phonegap-version" value="" />
 
 <preference name="SplashScreenDelay" value="2000" />
 <gap:splash src='Default.png'/>
